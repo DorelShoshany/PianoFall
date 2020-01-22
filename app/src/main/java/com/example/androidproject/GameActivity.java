@@ -2,6 +2,7 @@ package com.example.androidproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.graphics.Point;
 import android.hardware.Sensor;
@@ -364,6 +365,15 @@ public class GameActivity extends AppCompatActivity implements View.OnTouchListe
             player.animate()
                     .translationX((int)(player.getWidth()* (-event.values[0])*Global_Variable.SPEED_OF_PLAYER))
                     .setDuration(Global_Variable.DURATION_OF_PIANO_ANIMATE)
+                    .setUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                        @Override
+                        public void onAnimationUpdate(ValueAnimator animation) {
+                            float nextX = player.getX();
+                            nextX = nextX > 0? nextX:0;
+                            nextX = nextX < screenWidth1 - player.getWidth()? nextX:screenWidth1-player.getWidth();
+                            player.setX(nextX);
+                        }
+                    })
                     .withEndAction(new Runnable() {
                         @Override
                         public void run() {
