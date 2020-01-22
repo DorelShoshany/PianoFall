@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "809918110996",
+    "firebase_url": "https://pianofall-8c7ec.firebaseio.com",
+    "project_id": "pianofall-8c7ec",
+    "storage_bucket": "pianofall-8c7ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809918110996:android:455aa9a9fc119eb096f601",
+        "android_client_info": {
+          "package_name": "com.example.androidproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809918110996-pqi4cctcr7d88f3bk30ujtcc3s8phups.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidproject",
+            "certificate_hash": "eb4b54cfa7a907c24e52355e36e2919e6783d05c"
+          }
+        },
+        {
+          "client_id": "809918110996-cvf6ebp2uf9bvgd5a7j5g8agdc7pegu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYIiYF9fyjl2qtDVOXHH3S6W5J8dirYto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809918110996-cvf6ebp2uf9bvgd5a7j5g8agdc7pegu6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

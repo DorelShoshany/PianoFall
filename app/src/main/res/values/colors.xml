@@ -3,4 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="purple">#3F5EEE</color>
+    <color name="appColor">#FF9800</color>
+    <color name="white"> #FBFCFB</color>
+    <color name="pink">#F7E8F3</color>
+    <color name="blue">#182544</color>
+    <color name="backgroundForEditText">#979393</color>
 </resources>

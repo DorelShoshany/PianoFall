@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreSheetActivity">
+
+    <LinearLayout
+        android:id="@+id/scoreSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ScoreSheetActivity"
+        android:orientation="vertical">
+        <TextView
+            android:background="@color/appColor"
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="30dp">
+        </TextView>
+        <TextView
+            android:id="@+id/top_scores"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/top_scores"
+            android:background="@color/purple"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textColor="@color/white">
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentContainer"
+            android:layout_margin="5dp">
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:footerDividersEnabled="false"
+                android:divider="@color/purple"
+                android:dividerHeight="1dp"
+                android:listSelector="@android:color/transparent"
+                android:clickable="true">
+            </ListView>
+
+
+    </FrameLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
