@@ -55,7 +55,7 @@ public class GameOver extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-
+        getLastLocation();
         userName = getIntent().getStringExtra(Global_Variable.USER_NAME_FOR_MOVE_INTENT);
         password=getIntent().getStringExtra(Global_Variable.PASSWORD_FOR_MOVE_INTENT);
         points = getIntent().getIntExtra(Global_Variable.POINTS_FOR_MOVE_INTENT,0);
